@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    pre {
+      white-space: pre-wrap;
+      white-space: -moz-pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+  <!-- Normally wouldn't put this up here, but I need the page
+       to load this without any build tools, etc... --->
+  <script src="json.js"></script>
+</head>
+<body>
+
+<h4>JSON Challenge</h4>
+<p>This is a much simplier implementation than bringing in Jasmine / etc...</p>
+
+<p>To use this in the console you can use window.popJSON.stringify()</p>
+
+<h3>Initial Object</h3>
+<p><pre><code>
+    var obj = {
+      popsugar: "Challenge", whatAreWeDoing: "playing with JSON",
+      when: [8, 30, 2016], why: "because it is fun",
+      nestedObjects: {
+        sure: "of course they work!"
+      },
+      anotherNested: {
+        you: "better believe it"
+      }
+    };
+<code></pre></p>
+
+<br /><br />
+
+<h3>Hook me up with some JSON via popJSON</h3>
+<p>var parsed = window.popJSON.stringify(obj);</p>
+<p><pre><code>
+  <script>
+    var obj = {
+      popsugar: "Challenge", whatAreWeDoing: "playing with JSON",
+      when: [8, 30, 2016], why: "because it is fun",
+      nestedObjects: {
+        sure: "of course they work!"
+      },
+      anotherNested: {
+        you: "better believe it"
+      }
+    };
+
+    var parsed = window.popJSON.stringify(obj);
+
+    document.write(parsed);
+  </script>
+</code></pre></p>
+</body>
+</html>
